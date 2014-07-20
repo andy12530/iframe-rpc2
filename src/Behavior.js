@@ -1,3 +1,4 @@
+RPC.behavior = {};
 (function(Behavior) {
     Behavior.FLAG = '__RPC__';
 

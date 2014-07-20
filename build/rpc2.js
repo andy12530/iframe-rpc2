@@ -116,6 +116,11 @@ var RPC = function(config) {
     return Fn;
 };
 
+if (module) {
+    module.exports = RPC;
+} else {
+    window.RPC = RPC;
+}
 RPC.behavior = {};
 (function(Behavior) {
     Behavior.FLAG = '__RPC__';

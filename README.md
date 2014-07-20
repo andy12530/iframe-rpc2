@@ -1,12 +1,14 @@
-#iframe-rpc2
+##iframe-rpc2
 
 an easy to use JavaScript Cross-Domain RPC framework.
 
-## useage
+跨浏览器 RPC 通信组件。RPC 组件依赖 jQuery 以及 Events（src目录） 事件模块，这两个模块默认不打包。
 
-### Create a connection
+### useage 使用方法
 
-#### in main page
+#### Create a connection 建立连接
+
+##### in main page 主页面中
 ```javascript
 var IframeRPC = require('iframe-rpc2.js');
 var rpc = new IframeRPC({
@@ -31,7 +33,7 @@ var rpc = new IframeRPC({
 });
 ```
 
-#### in remote page
+##### in remote page 远程页面
 ```javascript
 var IframeRpc = require('iframe-rpc2.js');
 
@@ -48,7 +50,7 @@ var rpc = new IframeRPC({
 });
 ```
 
-#### call remote method
+##### call remote method 调用远程方法
 ```
 rpc('main_fn1', ['arg1', 'arg2']);
 
